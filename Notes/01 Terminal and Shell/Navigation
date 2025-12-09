@@ -1,0 +1,50 @@
+
+# Changing Directory
+
+cd              # go to user's home directory
+cd ~            # go to user's home directory
+cd [path]       # go to some location (absolute or relative)
+cd ~/Desktop    # go to the desktop using the absolute path
+pwd		# outputs absolute path of current directory
+
+# List Files
+
+ls                  # list non-hidden contents
+ls -a               # list everything, including hidden contents
+ls -l               # include the details about each file 
+ls -al              # list everything in working directory with details 
+ls -alh             # use human readable file sizes (i.e KB, MB, GB) instead of just bytes.
+ls -l [filename]    # output the details about one file
+
+# Creating Files and Directories
+
+mkdir [directory-name]   # create a directory or multiple
+touch [filename]         # create a file or multiple
+rmdir [directory]        # remove an empty directory
+rm [filename]            # remove a file or multiple
+rm -rf [directory]       # remove a directory and everything inside of it
+
+# Examples
+
+cd ~                            # navigate to the home directory
+cd                              # also navigate to the home directory
+pwd                             # prove it
+ls                              # look at the files in the home directory
+cd Desktop                      # navigate to the Desktop 
+mkdir programs                  # create a folder called programs
+mkdir csc222                    # create a folder called csc222
+cd programs                     # navigate into the folder called programs using the relative path
+touch hello.py                  # create a file called hello.py
+touch .gitignore                # create a hidden file 
+touch .another-hidden-file      # create another hidden file
+ls                              # list the files
+ls -a                           # list the files, include hidden ones 
+ls -l                           # list the files with details
+ls -alh                         # list the files, include hidden ones, include details, make the size human readable (i.e. Kb, Mb, etc.)
+ls -l hello.py                  # only list the info about hello.py
+cd ~/Desktop/csc222             # navigate to the csc222 folder using an absolute path 
+cd ..                           # navigate up one folder
+cd programs                     # navigate back into programs            
+rm .another-hidden-file         # remove the file
+cd ..                           # navigate up one directory
+rm -rf programs                 # remove the programs folder and everything in it (recursive, force)
